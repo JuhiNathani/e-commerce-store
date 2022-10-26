@@ -1,4 +1,8 @@
-.app {
+/* .app {
   height: 80vh;
   /* display: flex; */
+
+  html,body {
+    height: 100%;
+    margin: 0;
 }

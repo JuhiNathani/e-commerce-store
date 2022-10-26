@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const connectDB = async () => {
   try {
     await mongoose.connect(
-      process.env.MONGO_URI || 'mongodb://127.0.0.1/ecom',
+      process.env.MONGO_URI || 'mongodb+srv://admin:admin@cluster0.mgpxbr1.mongodb.net/?retryWrites=true&w=majority',
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
@@ -13,6 +13,7 @@ const connectDB = async () => {
 
     console.log('MongoDB connection SUCCESS')
   } catch (error) {
+    console.log(error);
     console.error('MongoDB connection FAIL')
     process.exit(1)
   }

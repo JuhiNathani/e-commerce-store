@@ -28,7 +28,9 @@ const Navbar = ({click}) => {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <h2>JSOM-E-COMERCE</h2>
+        <Link to="/">
+        <h2>Shaksham</h2>
+        </Link>
       </div>
 
       <ul className="navbar__links">
@@ -42,7 +44,7 @@ const Navbar = ({click}) => {
         </li>
 
         <li>
-          <Link to="/">Shop</Link>
+          <Link to="/shop">Shop</Link>
         </li>
 
         {!user.userInfo.isLogin ? (
